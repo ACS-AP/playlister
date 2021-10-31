@@ -6,13 +6,13 @@ sample_id_list = ['hY7m5jjJ9mM','CQ85sUNBK7w']
 #mock data
 sample_playlist_id = ObjectId('5d55cffc4a3d4031f42827a3')
 sample_playlist = {
-    'title': 'Cat Videos',
-    'description': 'Cats acting weird',
+    'title': 'NYC',
+    'description': 'NYC videos',
     'videos': [
-        'https://youtube.com/embed/hY7m5jjJ9mM',
-        'https://youtube.com/embed/CQ85sUNBK7w'
+        'https://www.youtube.com/embed/7S7smPw9EiE',
+        'https://www.youtube.com/embed/UN3uF3990Q0'
     ],
-    'video_ids': ['hY7m5jjJ9mM','CQ85sUNBK7w']
+    'video_ids': ['7S7smPw9EiE','UN3uF3990Q0']
 }
 sample_form_data = {
     'title': sample_playlist['title'],
