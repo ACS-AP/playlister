@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a href='/'>Back to Home</a>
+<a href="/">Back to Home</a>
 
 <h1>{{ playlist.title }}</h1>
 <h2>{{ playlist.description }}</h2>
@@ -12,8 +12,6 @@
 
 <p><a href='/playlists/{{ playlist._id }}/edit'>Edit</a></p>
 
-<!-- New code to add below -->
-<!-- Delete button -->
 <p><form method='POST' action='/playlists/{{ playlist._id }}/delete'>
     <button type='submit'>Delete</button>
 </form></p>
