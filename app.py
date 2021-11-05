@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 import os
 from datetime import datetime
 
-# MONGODB_URI is Config Var stored in settings: https://dashboard.heroku.com/apps/playlistr-sj/settings 
+# MONGODB_URI is Config Var stored in settings: https://dashboard.heroku.com/apps/playlistr-arnavpag/settings 
 host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Playlister')
 client = MongoClient(host=host)
 # db = client.test
@@ -12,8 +12,7 @@ client = MongoClient(host=host)
 # client = MongoClient(host=f'{host}?retryWrites=false')
 # client = MongoClient(host=host)
 db = client.get_default_database()
-# db = client.Playlister
-# one collection from the database called 'playlists'
+
 playlists = db.playlists
 comments = db.comments
 
